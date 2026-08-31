@@ -2,7 +2,7 @@
 
 A lightweight, interactive browser-based drawing application built with vanilla HTML, CSS, and JavaScript.
 
-![Pixel Sketch Demo](./public/pixel-sketch.png)
+![Pixel Sketch Demo](./assets/pixel-sketch.png)
 
 ## Features
 - **Dynamic Grid Sizing:** Adjustable grid resolution via range slider.
