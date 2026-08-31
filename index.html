@@ -1,18 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>etch-a-sketch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="sketch-container"></div>
-    <div class="slider-container">
-        <input type="range" min="1" max="100" value="16" class="slider" id="slider">
-        <p id="slider-value"></p>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <header id="app-header">
+    <div class="logo">
+        <span class="material-symbols-outlined logo-icon">draw</span>
+        <h1 class="logo-text">Pixel<span>Sketch</span></h1>
     </div>
-
+  </header>
+    <div id="icon-container">
+      <button id="grid-toggle">
+        <span class="material-symbols-outlined">grid_on</span>
+        <span>Grid</span>
+      </button>
+      <button id="eraserBtn">
+        <span class="material-symbols-outlined">ink_eraser</span>
+        <span>Eraser</span>
+      </button>
+      <button id="penBtn">
+        <span class="material-symbols-outlined">stylus</span>
+        <span>Pen</span>
+      </button>
+      <button id="randomBtn">
+        <span class="material-symbols-outlined">palette</span>
+        <span>Random</span>
+      </button>
+      <button id="resetBtn">
+        <span class="material-symbols-outlined">reset_colors</span>
+        <span>Reset</span>
+      </button>
+    </div>
+    <div id="sketch-container"></div>
+    <div id="slider-container">
+      <input type="range" class="slider" min="2" max="64" value="16" />
+      <p id="slider-value"></p>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
